@@ -1,0 +1,55 @@
+body {
+	/*background-color: #546e7a;*/
+	background-color: #eceff1; 
+}
+
+.red-text {
+	color: #ee6e73;
+}
+
+.grey-text {
+	color: #424242;
+}
+
+.syncopate  {
+	font-family: 'Syncopate', sans-serif;
+}
+
+/* Make tabs use Syncopate */
+div .collapsible-header {
+	font-family: 'Syncopate', sans-serif;
+}
+
+/* Fix page tabbing sides */
+#tabPanel {
+	padding: 0;
+}
+
+/* Fix background being grey for collapsible box */
+#experience p {
+	background-color: white;
+}
+
+/* Fix card link centering*/
+#project-link1 {
+	margin-right: 0;
+}
+
+#project-link2 {
+	margin-right: 0;
+}
+
+#header {
+	margin-top: 2.5%;
+}
+
+/* For Sticky footer */
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}

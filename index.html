@@ -1,0 +1,142 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+		<!--Import Google Icon Font-->
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Syncopate" rel="stylesheet">
+		<!--Import materialize.css-->
+		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+		<!-- Import personal style -->
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+    	<div id="pageContainer" class="container">
+
+    	<!-- Header -->
+		    <div class="row">
+		    	<div id="header" class="col s6 offset-s3 card-panel z-depth-3">
+		    		<h4 class="syncopate center-align grey-text">Victor Shi<br></h4>
+		    		<h5 class="center-align grey-text">Full-stack developer</h5>
+		    	</div>
+		    </div>
+
+	    	<!-- Tabs -->
+	    	<div class="row">
+				<div id="tabPanel" class="col s12 card-panel">
+			      <!-- Tab Names -->
+					<ul class="tabs syncopate">
+		        <li class="tab col s4"><a class="active waves-effect waves-red" href="#projects">Projects</a></li>
+		        <li class="tab col s4"><a class="waves-effect waves-red" href="#experience">Experience</a></li>
+		        <li class="tab col s4"><a class="waves-effect waves-red" href="#bio">Bio</a></li>
+					</ul>
+				</div>
+		    </div>
+
+		    <!-- Projects -->
+	     	<div id="projects" class="row"> 
+	     	<!-- First card -->
+		      <div class="col s5 offset-s1">
+						<div class="card medium hoverable">
+			        <div class="card-image">
+			          <img src="http://cdn2.hubspot.net/hub/245562/file-306538470-png/v3/ninja2.png?t=1453934745802">
+	          	</div>
+	            <div class="card-content center-align">
+								<span class="card-title syncopate">Smoove</span>
+                <p>Chat assistant</p>
+              </div>
+	            <div class="card-action center-align">
+                <a id="project-link1" href="#">Go to Devpost</a>
+	            </div>
+		        </div>
+	        </div>
+	        <!-- Second card -->
+	        <div class="col s5">
+            <div class="card medium hoverable">
+	            <div class="card-image">
+	          		<img src="https://www.colourbox.com/preview/3976465-small-yellow-duck.jpg">
+	          	</div>
+	            <div class="card-content center-align">
+                <span class="card-title syncopate">Facials</span>
+		            <p>Image recognition</p>
+	            </div>
+	            <div class="card-action center-align">
+                <a id="project-link2" href="#">Go to Devpost</a>
+	            </div>
+            </div>
+	        </div>
+      	<!-- End of Projects -->
+      	</div>
+
+	    	<!-- Experience Collapsible -->
+		    <div id="experience" class="row"> 
+			    <div class="s10 offset-s1">
+				    <ul class="collapsible popout" data-collapsible="accordion">
+					    <li class="active">
+				        <div class="collapsible-header active hoverable"><i class="material-icons">laptop</i>Programming</div>
+				        <div class="collapsible-body"><p>Java, Python, JavaScript</p></div>
+					    </li>
+					    <li>
+				        <div class="collapsible-header hoverable"><i class="material-icons">work</i>Work</div>
+				        <div class="collapsible-body"><p>Programmer Analyst at TELUS Health and Payment Solutions</p></div>
+					    </li>
+					    <li>
+				        <div class="collapsible-header hoverable"><i class="material-icons">school</i>School</div>
+				        <div class="collapsible-body"><p>Second-year Major in Computer Science and Minor in Philosophy</p></div>
+					    </li>
+				    </ul>
+			    </div>
+		    </div>
+
+		    <!-- Bio Info -->
+		    <div id="bio" class="row">
+		    	<div class="col s10 offset-s1">
+				    <div class="card horizontal">
+					    <div class="card-image">
+				        <img src="http://static.comicvine.com/uploads/original/11123/111232373/4738954-duckling.jpg">
+					    </div>
+					    <div class="card-stacked">
+				        <div class="card-content">
+				        	<p class="flow-text">My hobbies include reading and going to the gym</p>
+				        </div>
+					    </div>
+				    </div>
+					</div>
+				</div>
+	    <!-- Page Container -->
+			</div>
+
+		<!-- Footer -->
+	    <footer class="page-footer blue-grey lighten-3">
+        <div class="container">
+          <div class="row">
+            <div class="col s12 l6">
+              <h5 class="white-text">Contact Information</h5>
+	              <p class="grey-text text-lighten-4">victoryshoe@hotmail.com</p>
+                <p class="grey-text text-lighten-4">416-275-7588</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><p class="grey-text text-lighten-3 truncate"><a href="www.github.com/VictoryShoe">www.github.com/VictoryShoe</a></p></li>
+                  <li><p class="grey-text text-lighten-3 truncate"><a href="www.linkedin.com/in/victoryshoe">www.linkedin.com/in/victoryshoe</a></p></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Resume</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+	            Built with Materialize.css
+            </div>
+          </div>
+        </footer>
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/app.js"></script>
+    </body>
+  </html>
