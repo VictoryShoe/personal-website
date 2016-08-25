@@ -12,127 +12,337 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
-    <body>
+    <body class="blue-grey lighten-5">
     	<div id="pageContainer" class="container">
 
     	<!-- Header -->
 		    <div class="row">
-		    	<div id="header" class="col s6 offset-s3 card-panel z-depth-3">
+		    	<div id="header" class="col l8 offset-l2 m8 offset-m2 s10 offset-s1 card">
+
 		    		<h4 class="syncopate center-align grey-text">Victor Shi<br></h4>
-		    		<h5 class="center-align grey-text">Full-stack developer</h5>
+		    		<h5 class="center-align grey-text">Developer</h5>
+
+		    		<div class="col s12 m6 l6 center-align">
+			    		<p><a class="tooltipped grey-text" data-position="top" data-delay="50" data-tooltip="View my resume!">Resume</a></p>
+		    			<p><a class="tooltipped grey-text" data-position="left" data-delay="50" data-tooltip="Click to copy!" onclick="Materialize.toast('Copied to clipboard!', 2000)">victoryshoe@hotmail.com</a></p>
+		    			<p><a class="tooltipped grey-text" data-position="left" data-delay="50" data-tooltip="Click to copy!" onclick="Materialize.toast('Copied to clipboard!', 2000)">416-275-7588</a></p>
+            </div>
+
+            <div class="col l6 m6 s12 center-align">
+              <p class="grey-text">Related links:</p>
+              <p><a class="truncate" href="www.github.com/VictoryShoe">www.github.com/VictoryShoe</a></p>
+              <p><a class="truncate" href="www.linkedin.com/in/victoryshoe">www.linkedin.com/in/victoryshoe</a></p>
+            </div>
+
 		    	</div>
 		    </div>
 
 	    	<!-- Tabs -->
 	    	<div class="row">
-				<div id="tabPanel" class="col s12 card-panel">
-			      <!-- Tab Names -->
-					<ul class="tabs syncopate">
-		        <li class="tab col s4"><a class="active waves-effect waves-red" href="#projects">Projects</a></li>
-		        <li class="tab col s4"><a class="waves-effect waves-red" href="#experience">Experience</a></li>
-		        <li class="tab col s4"><a class="waves-effect waves-red" href="#bio">Bio</a></li>
-					</ul>
-				</div>
+					<div id="tabPanel" class="col s12 card">
+				      <!-- Tab Names -->
+						<ul class="tabs syncopate">
+			        <li class="tab col s4"><a class="active waves-effect waves-red" href="#projects">Projects</a></li>
+			        <li class="tab col s4"><a class="waves-effect waves-red" href="#experience">Experience</a></li>
+			        <li class="tab col s4"><a class="waves-effect waves-red" href="#bio">Bio</a></li>
+						</ul>
+					</div>
 		    </div>
 
 		    <!-- Projects -->
 	     	<div id="projects" class="row"> 
-	     	<!-- First card -->
-		      <div class="col s5 offset-s1">
-						<div class="card medium hoverable">
-			        <div class="card-image">
-			          <img src="http://cdn2.hubspot.net/hub/245562/file-306538470-png/v3/ninja2.png?t=1453934745802">
+	     	<!-- First card, large 3 cards, medium 2 cards, small 1 card -->
+		      <div class="col l4 m5 offset-m1 s10 offset-s1">
+						<div class="card large sticky-action hoverable">
+			        <div class="card-image waves-effect waves-block waves-red">
+			          <img class="activator" src="http://cdn2.hubspot.net/hub/245562/file-306538470-png/v3/ninja2.png?t=1453934745802">
 	          	</div>
-	            <div class="card-content center-align">
-								<span class="card-title syncopate">Smoove</span>
-                <p>Chat assistant</p>
+	          	<div class="card-content center-align">
+		          	<span class="card-title activator syncopate">Smoove</span>
+	          	</div>
+	            <div class="card-reveal">
+	            	<span class="card-title"><i class="material-icons right">close</i></span>
+                <p class="flow-text center-align">
+                	<br>
+                	Socialize better and faster with a chat assistant
+                </p>
+                <p class="center-align">
+                	Front-end: Materialize
+                	<br>
+                	Back-end: Angular, Node.js
+                	<br>
+                	API: indico, Twitter, Bing
+                </p>
               </div>
 	            <div class="card-action center-align">
-                <a id="project-link1" href="#">Go to Devpost</a>
+                <a id="project-link" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Do you get all the references? h<a>h</a>" href="#">Annie, are you okay?</a>
 	            </div>
 		        </div>
 	        </div>
 	        <!-- Second card -->
-	        <div class="col s5">
-            <div class="card medium hoverable">
-	            <div class="card-image">
-	          		<img src="https://www.colourbox.com/preview/3976465-small-yellow-duck.jpg">
+		      <div class="col l4 m5 offset-m1 s10 offset-s1">
+						<div class="card large sticky-action hoverable">
+			        <div class="card-image waves-effect waves-block waves-red">
+			          <img class="activator" src="http://cdn2.hubspot.net/hub/245562/file-306538470-png/v3/ninja2.png?t=1453934745802">
 	          	</div>
-	            <div class="card-content center-align">
-                <span class="card-title syncopate">Facials</span>
-		            <p>Image recognition</p>
-	            </div>
+	          	<div class="card-content center-align">
+		          	<span class="card-title activator syncopate">Facials</span>
+	          	</div>
+	            <div class="card-reveal">
+	            	<span class="card-title"><i class="material-icons right">close</i></span>
+                <p class="flow-text center-align">
+                	<br>
+                	Find how many faces there are in the crowd over time
+               	</p>
+                <p class="center-align">
+                	Front-end: Skeleton, Chart.js
+                	Back-end: Angular, Node.js
+                	API: Haven OnDemand API
+                </p>
+              </div>
 	            <div class="card-action center-align">
-                <a id="project-link2" href="#">Go to Devpost</a>
+                <a id="project-link" href="#">No matter where I go, you know I love 'em all</a>
 	            </div>
-            </div>
+		        </div>
 	        </div>
+	        <!-- Third card -->
+		      <div class="col l4 m5 offset-m1 s10 offset-s1">
+						<div class="card large sticky-action hoverable">
+			        <div class="card-image waves-effect waves-block waves-red">
+			          <img class="activator" src="http://cdn2.hubspot.net/hub/245562/file-306538470-png/v3/ninja2.png?t=1453934745802">
+	          	</div>
+	          	<div class="card-content center-align">
+		          	<span class="card-title activator syncopate">Solar Family Viewer VR</span>
+	          	</div>
+	            <div class="card-reveal">
+	            	<span class="card-title"><i class="material-icons right">close</i></span>
+                <p class="flow-text center-align">
+                	<br>
+                	Explore the solar system in virtual reality
+                </p>
+                <p class="center-align">
+                	Built using Oculus Rift, Unity, GIMP
+                </p>
+              </div>
+	            <div class="card-action center-align">
+                <a id="project-link" href="#">Planet Earth is blue</a>
+	            </div>
+		        </div>
+	        </div>
+	        <!-- Fourth card -->
+		      <div class="col l4 m5 offset-m1 s10 offset-s1">
+						<div class="card large sticky-action hoverable">
+			        <div class="card-image waves-effect waves-block waves-red">
+			          <img class="activator" src="http://cdn2.hubspot.net/hub/245562/file-306538470-png/v3/ninja2.png?t=1453934745802">
+	          	</div>
+	          	<div class="card-content center-align">
+		          	<span class="card-title activator syncopate">Dragon Slayer</span>
+	          	</div>
+	            <div class="card-reveal">
+	            	<span class="card-title"><i class="material-icons right">close</i></span>
+                <p class="flow-text center-align">
+                	<br>
+                	Beat the dragon in this interactive web browser game
+                </p>
+                <p class="center-align">
+                	Built using web JavaScript
+                </p>
+              </div>
+	            <div class="card-action center-align">
+                <a id="project-link" href="#">They call me Warren Glazer Griffin</a>
+	            </div>
+		        </div>
+	        </div>
+	        <!-- Fifth card -->
+		      <div class="col l4 m5 offset-m1 s10 offset-s1">
+						<div class="card large sticky-action hoverable">
+			        <div class="card-image waves-effect waves-block waves-red">
+			          <img class="activator" src="http://cdn2.hubspot.net/hub/245562/file-306538470-png/v3/ninja2.png?t=1453934745802">
+	          	</div>
+	          	<div class="card-content center-align">
+		          	<span class="card-title activator syncopate">Rock Paper Scissors</span>
+	          	</div>
+	            <div class="card-reveal">
+	            	<span class="card-title"><i class="material-icons right">close</i></span>
+                <p class="flow-text center-align">
+                	<br>
+                	Keep score and beat the computer
+                </p>
+                <p class="center-align">
+                	Built using web JavaScript
+                </p>
+              </div>
+	            <div class="card-action center-align">
+                <a id="project-link" href="#">Gon</a>
+	            </div>
+		        </div>
+	        </div>
+	        <!-- Sixth card -->
+		      <div class="col l4 m5 offset-m1 s10 offset-s1">
+						<div class="card large sticky-action hoverable">
+			        <div class="card-image waves-effect waves-block waves-red">
+			          <img class="activator" src="http://cdn2.hubspot.net/hub/245562/file-306538470-png/v3/ninja2.png?t=1453934745802">
+	          	</div>
+	          	<div class="card-content center-align">
+		          	<span class="card-title activator syncopate">Web Calculator</span>
+	          	</div>
+	            <div class="card-reveal">
+	            	<span class="card-title"><i class="material-icons right">close</i></span>
+                <p class="flow-text center-align">
+                	<br>
+                	Do some quick arithmetic with this handy app
+                <p class="center-align">
+                	Built using HTML, CSS, jQuery
+                </p>
+              </div>
+	            <div class="card-action center-align">
+                <a id="project-link" href="#">It's a calculator alright</a>
+	            </div>
+		        </div>
+	        </div>
+	        <!-- Other projects -->
+	        <!-- DragonSlayer, web calculator, rock paper scissors,  -->
       	<!-- End of Projects -->
       	</div>
 
 	    	<!-- Experience Collapsible -->
 		    <div id="experience" class="row"> 
-			    <div class="s10 offset-s1">
-				    <ul class="collapsible popout" data-collapsible="accordion">
-					    <li class="active">
-				        <div class="collapsible-header active hoverable"><i class="material-icons">laptop</i>Programming</div>
-				        <div class="collapsible-body"><p>Java, Python, JavaScript</p></div>
+			    <div class="row">
+			    	<div class="col s10 offset-s1">
+	            <div class="col l4 m4 s10 offset-s1">
+	              <div class="center-align">
+	                <i class="material-icons highlight-icon">alarm_on</i>
+	                <p class="highlight">Fast and good</p>
+	                <p>Always on the job to get work done reliably and deliver the highest possible quality content.</p>
+	              </div>
+	            </div>
+	            <div class="col l4 m4 s10 offset-s1">
+	              <div class="center-align">
+	                <i class="material-icons">trending_up</i>
+	                <p class="highlight">Driven by passion</p>
+	                <p>Eager to explore new technologies and learn from others in order to continuously improve.</p>
+	              </div>
+	            </div>
+	            <div class="col l4 m4 s10 offset-s1">
+	              <div class="center-align">
+	                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="I love board games, we should play sometime :)"><i class="material-icons">casino</i></a>
+	                <p class="highlight">Tons and tons of fun</p>
+	                <p>The backbone of any positive and productive environment, you'll have a great time working with me.</p>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+
+	        <div class="col s10 offset-s1">
+	        	<p class="center-align transparent">Find out more below!</p>
+        	</div>
+
+			    <div class="col l10 offset-l1 m10 offset-m1 s12">
+			    	<ul class="collapsible popout" data-collapsible="accordion">
+					    <li>
+					      <div class="collapsible-header waves-effect waves-red"><i class="material-icons">laptop</i>Programming</div>
+					      <div class="collapsible-body">
+					      	<p>
+					      		<!-- Section -->
+					      		<strong>Key Skills</strong>
+				        		<br>- Java
+			        			<br>- Python
+			        			<br>- UNIX Shell Scripting
+			        			<br>- Git
+			        			<br><br>Programming knowledge developed through formal education undertaken at Univesity of Western Ontario and an internship with Canadian telecommunications company TELUS.
+			        			<!-- Section --> <br><br>
+			        			<strong>Front-end</strong>
+			        			<br> - HTML
+				        		<br>- CSS
+				        		<br>- JavaScript
+				        		<br>- jQuery
+				        		<br>- Photoshop
+				        		<br>- GIMP
+				        		<br><br>Extensive front-end experience from developing web apps for hackathons and also designing promotional material for TELUS company event.
+				        		<!-- Section --> <br><br>
+				        		<strong>Back-end</strong>
+				        		<br>- Puppet
+				        		<br>- WebLogic
+				        		<br>- Dynatrace
+				        		<br><br>Server deployment, management, and monitoring experience from position as a Programmer Analyst with TELUS.
+					      	</p>
+					      </div>
 					    </li>
 					    <li>
-				        <div class="collapsible-header hoverable"><i class="material-icons">work</i>Work</div>
-				        <div class="collapsible-body"><p>Programmer Analyst at TELUS Health and Payment Solutions</p></div>
+					      <div class="collapsible-header waves-effect waves-red"><i class="material-icons">work</i>Work</div>
+					      <div class="collapsible-body">
+						      <p>
+							      <!-- Section -->
+							      <strong>Programmer Analyst</strong>
+							      <br>at TELUS Health and Payment Solutions
+							      <!-- <br>-	Diagnosed and set-up servers effectively, using Dynatrace and Puppet respectively
+										<br>-	Developed front-end data visualization web applications using HTML, CSS, JavaScript, and JavaScript libaries
+										<br>-	Designed promotional posters for company-sponsored event with Photoshop
+										<br>-	Operated with professional and industry-standard programming protocols -->
+										<!-- Section --><br><br>
+										<strong>Master Corporal</strong> 
+										<br>at 337 Queen's York Rangers Army Cadet Corps 		 
+										<!-- <br>-	Improved independent initiative to seek out and complete orders
+										<br>-	Achieved strong sense of work ethic due to military-standard of performance
+										<br>-	Built effective leadership and communication skills by managing lower ranking cadets -->
+										<!-- Section --><br><br>
+										<strong>Cashier & Cook</strong>
+										<br>at Hero Certified Burgers 	       
+										<!-- <br>-	Worked with extreme efficiency and precision under pressure during rush hours
+										<br>-	Mentored and responsible for new employees on general store operations
+										<br>-	Provided a consistent hospitable attitude for customers, regardless of situation -->
+						      </p>
+					      </div>
 					    </li>
 					    <li>
-				        <div class="collapsible-header hoverable"><i class="material-icons">school</i>School</div>
-				        <div class="collapsible-body"><p>Second-year Major in Computer Science and Minor in Philosophy</p></div>
+					      <div class="collapsible-header waves-effect waves-red"><i class="material-icons">school</i>School</div>
+					      <div class="collapsible-body">
+					      	<p>
+					      		<strong>Second-year Computer Science Major</strong>
+					      		<br>at the University of Western Ontario
+					      		<!-- Info about my academic interests and goals -->
+					      	</p>
+					      </div>
 					    </li>
-				    </ul>
-			    </div>
+					  </ul>
+				  </div>
 		    </div>
 
 		    <!-- Bio Info -->
-		    <div id="bio" class="row">
-		    	<div class="col s10 offset-s1">
-				    <div class="card horizontal">
-					    <div class="card-image">
-				        <img src="http://static.comicvine.com/uploads/original/11123/111232373/4738954-duckling.jpg">
-					    </div>
-					    <div class="card-stacked">
-				        <div class="card-content">
-				        	<p class="flow-text">My hobbies include reading and going to the gym</p>
-				        </div>
-					    </div>
-				    </div>
-					</div>
-				</div>
+				<div id="bio" class="row">
+					<div class="col l10 offset-l1 m10 offset-m1 s12">
+		        <div class="card-panel grey lighten-5 z-depth-1">
+		          <div class="row valign-wrapper">
+		            <div class="col s6 offset-s3 m4 offset-m4 l4 offset-l4">
+		              <a class="tooltipped" data-position="right" data-delay="50" data-tooltip="I think Halo is a pretty cool guy. Eh kills aleins and doesnt afraid of anything.">
+		              	<img src="http://minecraftfaces.com/wp-content/bigfaces/big-steve-face.png" class="circle responsive-img valign">
+	              	</a>
+		            </div>
+		          </div>
+		          <div class="row">
+		            <div class="col s12 m10 offset-m1 l10 offset-l1">
+		              <span class="black-text flow-text">
+		                A dedicated and passionate person, I am always eager to work on things that excite me! Currently, I'm working this summer as a co-op student at TELUS. My recent personal projects are focused on learning various programming languages and working on web development side projects.
+		                <br><br>
+										In my free time, my favorite hobbies include reading and going to the gym!
+		              </span>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+	      </div>
+
 	    <!-- Page Container -->
 			</div>
 
 		<!-- Footer -->
-	    <footer class="page-footer blue-grey lighten-3">
-        <div class="container">
-          <div class="row">
-            <div class="col s12 l6">
-              <h5 class="white-text">Contact Information</h5>
-	              <p class="grey-text text-lighten-4">victoryshoe@hotmail.com</p>
-                <p class="grey-text text-lighten-4">416-275-7588</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                  <li><p class="grey-text text-lighten-3 truncate"><a href="www.github.com/VictoryShoe">www.github.com/VictoryShoe</a></p></li>
-                  <li><p class="grey-text text-lighten-3 truncate"><a href="www.linkedin.com/in/victoryshoe">www.linkedin.com/in/victoryshoe</a></p></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Resume</a></li>
-                </ul>
-              </div>
-            </div>
+			<footer class="page-footer">
+		    <div class="footer-copyright">
+          <div class="container">
+            Built with Materialize
           </div>
-          <div class="footer-copyright">
-            <div class="container">
-	            Built with Materialize.css
-            </div>
-          </div>
-        </footer>
+        </div>
+      </footer>
 
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
