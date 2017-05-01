@@ -10,14 +10,6 @@ body {
 	justify-content: center;
 }
 
-.pic-placeholder {
-	height: 100px;
-	width: 100px;
-	background-color: pink;
-}
-
-
-
 #container {
 	display: flex;
 }
@@ -58,18 +50,10 @@ body {
 	margin: 10px;
 }
 
-.card-image {
-	margin: 5px;
-}
-
 #featured {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-}
-
-#experience {
-	/*display: flex;*/
 }
 
 .columns {
@@ -90,6 +74,7 @@ body {
 	padding: 10px;
 }
 
+/* Not used */
 .third-column {
 	max-width: 35%;
 	flex-grow: 0;
@@ -97,7 +82,21 @@ body {
 	padding: 10px;
 }
 
-.row {
-	flex-direction: row;
-	justify-content: center;
+.center-image {
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center; /* align vertical */
+}
+
+#logo .image {
+	max-height: 200px;
+	max-width: 200px;
+	border: pink solid 10px;
+}
+
+.image {
+	max-height: 200px;
+	max-width: 150px;
+	border: pink solid 10px;
+	margin: 10px;
 }
