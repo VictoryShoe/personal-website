@@ -1,0 +1,95 @@
+body {
+	font-family: 'Roboto Mono', monospace;
+	border: black dashed 5px;
+}
+
+/* Helper */
+
+.center {
+	display: flex;
+	justify-content: center;
+}
+
+.pic-placeholder {
+	height: 100px;
+	width: 100px;
+	background-color: pink;
+}
+
+
+
+#container {
+	display: flex;
+}
+
+#sidebar {
+	display: flex;
+	flex-direction: column;
+	background-color: tomato;
+	max-width: 20%;
+}
+
+/* Can't center logo right now */
+#logo {
+	display: inline-flex;
+	justify-content: center;
+}
+
+.section {
+	padding-top: 5%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+#intro {
+	background-color: salmon;
+}
+
+#content {
+	display: flex;
+	flex-direction: column;
+	background-color: gray;
+	width: 80%;
+}
+
+.card {
+	max-width: 25%;
+	flex-grow: 1;
+	background-color: salmon;
+	padding: 5px;
+	margin: 10px;
+}
+
+.card-image {
+	margin: 5px;
+}
+
+#featured {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#experience {
+	/*display: flex;*/
+}
+
+.columns {
+	display: flex;
+
+	justify-content: center;
+}
+
+.half-column {
+	max-width: 45%;
+	flex-grow: 1;
+	background-color: salmon;
+}
+
+.padding-left {
+	padding-left: 20%;
+}
+
+.row {
+	flex-direction: row;
+	justify-content: center;
+}
