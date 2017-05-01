@@ -47,7 +47,6 @@ body {
 #content {
 	display: flex;
 	flex-direction: column;
-	background-color: gray;
 	width: 80%;
 }
 
@@ -75,18 +74,27 @@ body {
 
 .columns {
 	display: flex;
-
 	justify-content: center;
+}
+
+.one-column {
+	max-width: 90%;
+	background-color: salmon;
+	padding: 10px;
 }
 
 .half-column {
 	max-width: 45%;
 	flex-grow: 1;
 	background-color: salmon;
+	padding: 10px;
 }
 
-.padding-left {
-	padding-left: 20%;
+.third-column {
+	max-width: 35%;
+	flex-grow: 0;
+	background-color: salmon;
+	padding: 10px;
 }
 
 .row {
