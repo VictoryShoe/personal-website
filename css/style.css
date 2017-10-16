@@ -4,7 +4,7 @@
 }
 .content > div {
 	display: none; 
-	padding-top: 5%
+	padding-top: 10%
 }
 #tab1:checked ~ .content #content1,
 #tab2:checked ~ .content #content2,
