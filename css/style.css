@@ -21,7 +21,7 @@ label {
 #tab2:checked ~ #label2,
 #tab3:checked ~ #label3,
 #tab4:checked ~ #label4 {
-		text-decoration: underline;
+	text-decoration: underline;
 }
 
 /* Utilities */
